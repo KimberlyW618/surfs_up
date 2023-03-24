@@ -12,7 +12,7 @@ from sqlalchemy import create_engine, func
 from flask import Flask, jsonify
 
 # access the SQLite database
-engine = create_engine("sqlite:///resources/hawaii.sqlite")
+engine = create_engine("sqlite:///../resources/hawaii.sqlite")
 
 # reflect the database into our classes
 Base = automap_base()
